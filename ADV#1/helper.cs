@@ -52,13 +52,16 @@ namespace ADV_1
 
         #region /*Generic linear search*/
         //// /*Generic linear search*/
-        public static int linearsearch<T>(T[] Arr, T value)
+        public static int linearsearch<T>(T[] Arr, T value, IEqualityComparer<T> equalityComparer )
         {
             if (Arr?.Length > 0)
             {
                 for (int i = 0; i < Arr.Length; i++)
                 {
-                    if (Arr[i].Equals(value)) return i;
+                    if (equalityComparer.Equals(Arr[i], value)){
+                        return i;
+                    }
+                       
 
                 }
 
