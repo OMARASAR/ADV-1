@@ -19,6 +19,22 @@ namespace ADV_1
             return HashCode.Combine(obj.name) ;
         }
     }
+    class Employeecomparersalary : IComparer<Employee>
+    {
+        public int Compare(Employee? x, Employee? y)
+        {
+            return x.salary.CompareTo(y.salary);
+        }
+    }
+
+    class Employeecomparernamelengh : IComparer<Employee>
+    {
+        public int Compare(Employee? x, Employee? y)
+        {
+            return x.name.Length.CompareTo(y.name.Length);
+        }
+    }
+
     internal class Employee : IComparable<Employee>, IEquatable<Employee>
     {
         public int id { get; set; }
