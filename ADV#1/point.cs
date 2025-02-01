@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ADV_1
 {
-    internal struct point : IComparable
+    internal class point : IComparable
     {
         public int x { get; set; }
         public int y { get; set; }
@@ -23,11 +23,62 @@ namespace ADV_1
             return $"({x}, {y})";
         }
 
+        //public int CompareTo(object? obj)
+        //{
+        //    point p = (point)obj;
+        //    if (x == p.x) return y.CompareTo(p.y);
+        //    return x.CompareTo(p.x);
+        //}
+        //public int CompareTo(object? obj)
+        //{
+        //    if (obj is not null)
+        //    {
+        //        point p = (point)obj;
+        //        if (x == p.x) return y.CompareTo(p.y);
+        //        return x.CompareTo(p.x);
+
+        //    }
+        //    return 1;
+
+        //}
+
+        //public int CompareTo(object? obj)
+        //{
+        //    // is conditional operetor
+        //    if (obj is not null)
+        //    {
+        //        if(obj is point p)
+        //        {
+        //            //point p = (point)obj;
+        //            if (x == p.x) return y.CompareTo(p.y);
+        //            return x.CompareTo(p.x);
+
+
+        //        }
+
+        //    }
+        //    return 1;
+
+        //}
+
         public int CompareTo(object? obj)
         {
-            point p = (point)obj;
-            if (x == p.x) return y.CompareTo(p.y);
-            return x.CompareTo(p.x);
+            // as casting
+
+            point p = obj as point;
+            if (obj is not null)
+            {
+                if (x == p.x) return y.CompareTo(p.y);
+                    return x.CompareTo(p.x);
+            }
+
+
+            return 1;
+
         }
+
+
+
+
     }
 }

@@ -124,6 +124,31 @@ namespace ADV_1
 
             #endregion
 
+            #region is & as
+            //point[] points =
+            //{
+            //    new point(1,1),
+            //    new point(3,3),
+            //    new point(0,0),
+            //    new point(4,4),
+            //    new point(2,2),
+            //    new point(5,5)
+            //};
+            //helper.PrintArray(points);
+
+            //helper.Bubblesort(points);
+            //helper.PrintArray(points);
+
+            //point p01 = new point(1, 1);
+            //point p02 = new point(2, 2);
+            //if (p01.CompareTo(p02) > 0)
+            //    Console.WriteLine("p01 is Greater than p02");
+            //else
+            //    Console.WriteLine("p01 is not Greater than p02");
+
+            #endregion
+
+
 
 
 

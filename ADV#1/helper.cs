@@ -11,20 +11,20 @@ namespace ADV_1
 
 
         #region sorting Bubble sort
-        //public static void Bubblesort<T>(T[] Arr) where T : IComparable
-        //{
-        //    if (Arr?.Length > 0)
-        //    {
-        //        for (int i = 0; i < Arr.Length; i++)
-        //        {
-        //            for (int j = 0; j < Arr.Length - i - 1; j++)
-        //            {
-        //                if (Arr[j].CompareTo ( Arr[j + 1]) > 0)
-        //                    SWAP(ref Arr[j], ref Arr[j + 1]);
-        //            }
-        //        }
-        //    }
-        //}
+        public static void Bubblesort<T>(T[] Arr) where T : IComparable
+        {
+            if (Arr?.Length > 0)
+            {
+                for (int i = 0; i < Arr.Length; i++)
+                {
+                    for (int j = 0; j < Arr.Length - i - 1; j++)
+                    {
+                        if (Arr[j].CompareTo(Arr[j + 1]) > 0)
+                            SWAP(ref Arr[j], ref Arr[j + 1]);
+                    }
+                }
+            }
+        }
 
         #endregion
 
