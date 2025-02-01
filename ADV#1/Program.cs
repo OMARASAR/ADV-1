@@ -1,4 +1,7 @@
-﻿namespace ADV_1
+﻿using System;
+using System.Reflection;
+
+namespace ADV_1
 {
     internal class Program
     {
@@ -62,6 +65,30 @@
             //Console.WriteLine($"Index : {index}");
 
             #endregion
+
+
+
+            #region MyRegion
+            //Employee E01 = new Employee() { id = 1, name = "Ahmed", salary = 500000, age = 25 };
+            //Employee E02 = new Employee() { id = 1, name = "Ahmed", salary = 500000, age = 25 };
+            ////Employee E02 = new Employee() { id = 2, name = "Mohamed", salary = 500000, age = 30 };
+
+
+            ////if (E01.Equals(E02))
+            ////    Console.WriteLine("E01=E02");
+            ////else
+            ////    Console.WriteLine("E01!=E02");
+
+            //if (E01==E02)
+            //    Console.WriteLine("E01=E02");
+            //else
+            //    Console.WriteLine("E01!=E02");
+
+            #endregion
+
+
+
+
 
 
 
