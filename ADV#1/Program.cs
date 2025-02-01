@@ -87,6 +87,46 @@ namespace ADV_1
             #endregion
 
 
+            #region sorting Bubble sort
+            // sorting Bubble sort
+            //int[] Numbers = { 8, 7, 6, 1, 2, 3, 4, 5, 6, 12, -1, 13, 9 };
+
+            //helper.PrintArray(Numbers);
+
+            //Console.WriteLine("***********After sort *************");
+
+            //helper.Bubblesort(Numbers);
+            //helper.PrintArray(Numbers);
+
+            //point[] points =
+            //{
+            //    new point(1,1),
+            //    new point(3,3),
+            //    new point(0,0),
+            //    new point(4,4),
+            //    new point(2,2),
+            //    new point(5,5)
+            //};
+            //helper.Bubblesort(points);
+            //helper.PrintArray(points);
+
+            //Employee E01 = new Employee() { id = 1, name = "Ahmed", salary = 500000, age = 25 };
+            //Employee E02 = new Employee() { id = 2, name = "Mohamed", salary = 500000, age = 30 };
+            //Employee E03 = new Employee() { id = 3, name = "Omar", salary = 500000, age = 24 };
+            //Employee E04 = new Employee() { id = 4, name = "Zain", salary = 500000, age = 32 };
+
+            //Employee[] employees = { E01, E02, E03, E04 };
+            //helper.PrintArray(employees);
+
+            //helper.Bubblesort(employees);
+
+            //helper.PrintArray(employees);
+
+            #endregion
+
+
+
+
 
 
 
