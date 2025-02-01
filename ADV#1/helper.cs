@@ -11,7 +11,7 @@ namespace ADV_1
 
 
         #region sorting Bubble sort
-        public static void Bubblesort<T>(T[] Arr) where T : IComparable
+        public static void Bubblesort<T>(T[] Arr) where T : IComparable<T>
         {
             if (Arr?.Length > 0)
             {

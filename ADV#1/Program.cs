@@ -148,6 +148,23 @@ namespace ADV_1
 
             #endregion
 
+            #region genetic ico
+            //Employee E01 = new Employee() { id = 1, name = "Ahmed", salary = 500000, age = 25 };
+            //Employee E02 = new Employee() { id = 2, name = "Mohamed", salary = 500000, age = 30 };
+            //Employee E03 = new Employee() { id = 3, name = "Omar", salary = 500000, age = 24 };
+            //Employee E04 = new Employee() { id = 4, name = "Zain", salary = 500000, age = 32 };
+
+            //Employee[] employees = { E01, E02, E03, E04 };
+            //helper.PrintArray(employees);
+
+            //helper.Bubblesort(employees);
+
+            //helper.PrintArray(employees);
+
+            #endregion
+
+
+
 
 
 
