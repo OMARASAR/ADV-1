@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ADV_1
 {
-    internal class Employee : IComparable<Employee>
+    internal class Employee : IComparable<Employee>, IEquatable<Employee>
     {
         public int id { get; set; }
         public string name { get; set; }
@@ -30,13 +30,22 @@ namespace ADV_1
         {
             return $"Id:{id} , name:{name} , age:{age}, salary:{salary}";
         }
+        //public override bool Equals(object? obj)
+        //{
+        //    Employee E = (Employee)obj;
+        //    return this == E;
+        //}
 
+        public bool Equals(Employee? other)
+        {
+            if (other is null) return false;
+            return this == other;
+        }
 
+        //public static bool operator !=(Employee left, Employee right)
+        //{
+        //    return left.id != right.id || left.name != right.name || left.age != right.age || left.salary != right.salary;
 
-
-
-
-
-
+        //}
     }
 }

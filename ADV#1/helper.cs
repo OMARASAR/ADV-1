@@ -52,19 +52,19 @@ namespace ADV_1
 
         #region /*Generic linear search*/
         //// /*Generic linear search*/
-        //public static int linearsearch<T>(T[] Arr, T value)
-        //{
-        //    if (Arr?.Length > 0)
-        //    {
-        //        for (int i = 0; i < Arr.Length; i++)
-        //        {
-        //            if (Arr[i].Equals( value)) return i;
+        public static int linearsearch<T>(T[] Arr, T value)
+        {
+            if (Arr?.Length > 0)
+            {
+                for (int i = 0; i < Arr.Length; i++)
+                {
+                    if (Arr[i].Equals(value)) return i;
 
-        //        }
+                }
 
-        //    }
-        //    return -1;
-        //}
+            }
+            return -1;
+        }
 
         #endregion
 
